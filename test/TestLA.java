@@ -5,7 +5,7 @@ import modelo.Grafo;
 import modelo.Persona;
 
 
-public class TestLista {
+public class TestLA {
 
     public static void main(String[] args) {
         IGrafo<Persona> grafo = new Grafo<>();

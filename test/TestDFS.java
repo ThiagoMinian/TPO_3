@@ -7,7 +7,7 @@ import modelo.Recorridos;
 
 
 
-public class TestBFS {
+public class TestDFS {
 
     public static void main(String[] args) {
         IGrafo<Persona> grafo = new Grafo<>();
