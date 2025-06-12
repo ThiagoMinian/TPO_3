@@ -3,7 +3,7 @@ package test;
 import interfaces.IGrafo;
 import modelo.Grafo;
 import modelo.Persona;
-import modelo.Recorrido_DFS;
+import modelo.Recorridos;
 
 public class TestGrafo {
 
@@ -24,7 +24,8 @@ public class TestGrafo {
         grafo.mostrarMatrizAdyacencia();
         grafo.mostrarListaAdyacencia();
 
-        Recorrido_DFS<Persona> dfs = new Recorrido_DFS<>(((Grafo<Persona>) grafo).getMapaNodos());
-        dfs.dfs(ana); // Comenzar desde Ana
+        Recorridos<Persona> recorridos = new Recorridos<>(((Grafo<Persona>) grafo).getMapaNodos());
+        recorridos.dfs(ana);
+        recorridos.bfs(ana);
     }
 }
