@@ -2,6 +2,8 @@ package modelo;
 
 import java.util.*;
 
+import interfaces.INodo;
+
 public class Recorridos<T> {
     private Map<T, Nodo<T>> nodos;
 
