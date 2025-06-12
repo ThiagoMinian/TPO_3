@@ -1,8 +1,9 @@
+package test;
+
 import interfaces.IGrafo;
 import modelo.Grafo;
 import modelo.Persona;
 
-package test;
 
 public class TestLista {
 

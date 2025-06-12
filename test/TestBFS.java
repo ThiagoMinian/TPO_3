@@ -1,9 +1,9 @@
+package test;
+
 import interfaces.IGrafo;
 import modelo.Grafo;
 import modelo.Persona;
 import modelo.Recorridos;
-
-package test;
 
 public class TestBFS {
 
