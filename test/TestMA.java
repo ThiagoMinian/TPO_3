@@ -1,16 +1,25 @@
-public static void testMatrizAdyacencia() {
-    IGrafo<Persona> grafo = new Grafo<>();
+import interfaces.IGrafo;
+import modelo.Grafo;
+import modelo.Persona;
 
-    Persona ana = new Persona("Ana", 30);
-    Persona bruno = new Persona("Bruno", 25);
-    Persona carla = new Persona("Carla", 28);
+package test;
 
-    grafo.agregarNodo(ana);
-    grafo.agregarNodo(bruno);
-    grafo.agregarNodo(carla);
+public class TestMatriz {
 
-    grafo.agregarArista(ana, bruno);
-    grafo.agregarArista(bruno, carla);
+    public static void main(String[] args) {
+        IGrafo<Persona> grafo = new Grafo<>();
 
-    grafo.mostrarMatrizAdyacencia();
+        Persona ana = new Persona("Ana", 30);
+        Persona bruno = new Persona("Bruno", 25);
+        Persona carla = new Persona("Carla", 28);
+
+        grafo.agregarNodo(ana);
+        grafo.agregarNodo(bruno);
+        grafo.agregarNodo(carla);
+
+        grafo.agregarArista(ana, bruno);
+        grafo.agregarArista(bruno, carla);
+
+        grafo.mostrarMatrizAdyacencia();
+    }
 }
